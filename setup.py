@@ -20,7 +20,7 @@ setup(
     install_requires=[
         'numpy', 'scipy', 'matplotlib', 'pandas'
     ],
-    extras_require={'docs': ['sphinx', 'alabasta']},
+    extras_require={'docs': ['sphinx', 'alabaster', 'sphinxcontrib-jsmath', 'sphinx-autoapi']},
     package_data={'ocelot.optics': ['data/*.dat']},
     # long_description=open(join(dirname(__file__), 'README.txt')).read(),
 )
