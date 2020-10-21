@@ -6,7 +6,7 @@ import os
 from sys import platform 
 
 
-print "platform = ", platform, "  os.name = ", os.name
+print("platform = ", platform, "  os.name = ", os.name)
 if os.name == "nt":
 	cmd = 'c:/MinGW/bin/mingw32-make -f Makefile'
 else:
@@ -17,7 +17,7 @@ args = shlex.split(cmd)
 
 p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 result = p.communicate()[0]
-print result
+print(result)
 cmd = "make clean"
 if os.name == "nt":
 	cmd = 'c:/MinGW/bin/mingw32-make -f Makefile'
